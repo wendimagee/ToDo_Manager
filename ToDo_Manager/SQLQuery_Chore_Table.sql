@@ -1,0 +1,7 @@
+--CREATE TABLE Chore
+--(
+--Id int PRIMARY KEY NOT NULL IDENTITY(1,1), 
+--Description nvarchar(15) NOT NULL, 
+--CompletionStatus bit, 
+--UserId nvarchar(450) FOREIGN KEY REFERENCES AspNetUsers(Id)
+--)
