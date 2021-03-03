@@ -2,6 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
+// Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
+// If you have enabled NRTs for your project, then un-comment the following line:
+// #nullable disable
+
 namespace ToDo_Manager.Models
 {
     public partial class ToDoDbContext : DbContext
@@ -138,6 +142,8 @@ namespace ToDo_Manager.Models
                 entity.Property(e => e.Description)
                     .IsRequired()
                     .HasMaxLength(15);
+
+                entity.Property(e => e.DueDate).HasColumnType("date");
 
                 entity.Property(e => e.UserId).HasMaxLength(450);
 

@@ -17,9 +17,15 @@
                     <span asp-validation-for="Description" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="CompletionStatus" class="control-label"></label>
-                    <input asp-for="CompletionStatus" class="form-control" />
-                    <span asp-validation-for="CompletionStatus" class="text-danger"></span>
+                    <p>Completion Status: </p>
+                    <label>Completed</label>
+                    <input type="radio" name="CompletionStatus" value="True" />
+                    <label>Incomplete</label>
+                    <input type="radio" name="CompletionStatus" value="False" />
+                </div>
+                <div class="form-group">
+                    <p>Due Date:</p>
+                    <input type="date" name="DueDate" />
                 </div>
                 <div class="form-group">
                     <input type="submit" value="Create" class="btn btn-primary" />
